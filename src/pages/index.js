@@ -4,3 +4,5 @@ export {default as People} from './People';
 export {default as Error} from './Error';
 export {default as Events} from './Events';
 export {default as Research } from './Research';
+export {default as NavbarApp } from './Navbar';
+
