@@ -1,6 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { About, Error, Landing, Events, Research, NavbarApp } from "./pages";
+import {
+  About,
+  Error,
+  Landing,
+  Events,
+  Research,
+  NavbarApp,
+  People,
+} from "./pages";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -16,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <About />,
+      },
+      {
+        path: "/people",
+        element: <People />,
       },
       {
         path: "/research-publication",
