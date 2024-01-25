@@ -3,6 +3,8 @@ import { Navbar, Nav, Button } from "react-bootstrap";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import "../assets/css/navbar.css";
+import CopyRightFooter from "../components/footer/CopyRightFooter";
+import Footer from "../components/footer/Footer";
 
 function NavbarApp() {
   const location = useLocation();
@@ -26,12 +28,13 @@ function NavbarApp() {
   const people = "/people";
   const events = "/events";
   const research = "/research-publication";
+  const contactUs = "/contact-us";
+
   const isActiveIndex = location.pathname === index;
   const isActiveAboutUs = location.pathname === aboutUs;
   const isActivePeople = location.pathname === people;
   const isActiveResearch = location.pathname === research;
   const isActiveEvents = location.pathname === events;
-
   return (
     <>
       <Navbar
@@ -62,13 +65,18 @@ function NavbarApp() {
             </Nav.Link>
           </Nav>
           <Nav className="ml-auto">
-            <Button as={Link} to="/contact" className="btn-primary">
+            <Button as={Link} to={contactUs} className="btn-primary">
               Contact Us
             </Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
       <Outlet />
+      <div className="footer">
+
+        <Footer/>
+        <CopyRightFooter />
+      </div>
     </>
   );
 }
