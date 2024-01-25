@@ -1,13 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import Banner from '../components/Home/Banner'
+import React from "react";
+import { Link } from "react-router-dom";
+import Banner from "../components/Home/Banner";
+import CopyRightFooter from "../components/footer/CopyRightFooter";
 
 function Landing() {
   return (
     <>
-      <Banner />
+
     </>
-  )
+  );
 }
 
-export default Landing
+export default Landing;
