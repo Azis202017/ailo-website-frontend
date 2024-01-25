@@ -1,10 +1,26 @@
-import React from "react";
-import { Navbar, Nav } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import { Outlet, Link, useLocation } from "react-router-dom";
-import Logo from "../images/logo.png";
+import Logo from "../assets/images/logo.png";
+import "../assets/css/navbar.css";
 
 function NavbarApp() {
   const location = useLocation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const aboutUs = "/about-us";
   const index = "/";
   const people = "/people";
@@ -14,18 +30,21 @@ function NavbarApp() {
   const isActiveAboutUs = location.pathname === aboutUs;
   const isActivePeople = location.pathname === people;
   const isActiveResearch = location.pathname === research;
-
   const isActiveEvents = location.pathname === events;
 
   return (
     <>
-      <Navbar bg="transparent" expand="lg">
-        <Navbar.Brand href="/">
+      <Navbar
+        expand="lg"
+        className={scrolled ? "navbar-scrolled" : "navbar-unscrolled"}
+        fixed="top"
+      >
+        <Navbar.Brand className="nav-brand" href="/">
           <img src={Logo} className="img-fluid" alt="Logo ai center" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
+          <Nav className=" ml-auto">
             <Nav.Link as={Link} to={index} active={isActiveIndex}>
               Home
             </Nav.Link>
@@ -42,18 +61,14 @@ function NavbarApp() {
               Events
             </Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link
-              as={Link}
-              to="/contact"
-              active={location.pathname === "/contact"}
-            >
+          <Nav className="ml-auto">
+            <Button as={Link} to="/contact" className="btn-primary">
               Contact Us
-            </Nav.Link>
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Outlet></Outlet>
+      <Outlet />
     </>
   );
 }
