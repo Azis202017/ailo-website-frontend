@@ -5,4 +5,6 @@ export {default as Error} from './Error';
 export {default as Events} from './Events';
 export {default as Research } from './Research';
 export {default as NavbarApp } from './Navbar';
+export {default as ContactUs } from './ContactUs';
+
 
