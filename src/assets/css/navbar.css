@@ -1,0 +1,22 @@
+.nav-brand {
+  width: 159px;
+  height: 48px;
+}
+.active {
+  color: #3460aa !important;
+  border-bottom: 1px solid #3460aa;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* Change the background color as needed */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar-unscrolled {
+  background-color: white !important; /* Change the background color as needed */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar-scrolled,
+.navbar-unscrolled {
+  padding: 16px 160px 16px 160px;
+}
