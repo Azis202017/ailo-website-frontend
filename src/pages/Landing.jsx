@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import Maskot from '../assets/images/maskot.png';
 import Directur from '../assets/images/directur.png';
 import ViceDirectur from '../assets/images/vice.jpeg';
+import NLP from '../assets/images/nlp.png';
+import CV from '../assets/images/eye.png';
+import Siec from '../assets/images/diagram.png';
+import AI from '../assets/images/artificial-intelligence.png';
+
+
+
 
 import "../assets/css/landing.css";
 function Landing() {
@@ -27,23 +34,23 @@ function Landing() {
         <section id="research">
           <div className="d-lg-flex">
             <div className="nlp d-flex flex-column align-items-center">
-              <img src="assets/images/nlp.png" alt="" />
+              <img src={NLP} alt="" />
               <p>NLP</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src="assets/images/eye.png" alt="" />
+              <img src={CV} alt="" />
               <p>Computer Vision</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src="assets/images/bpm.png" alt="" />
+              <img src={CV} alt="" />
               <p>P&O</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src="assets/images/diagram.png" alt="" />
+              <img src={Siec} alt="" />
               <p>SIEC</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src="assets/images/artificial-intelligence.png" alt="" />
+              <img src={AI} alt="" />
               <p>4G AI</p>
             </div>
           </div>
@@ -74,7 +81,7 @@ function Landing() {
           <div className="d-lg-flex justify-content-lg-center">
             <div className="meet-our-team-director d-flex flex-column align-items-center">
               <img
-                src={ViceDirectur}
+                src={Directur}
                 alt=""
                 className="meet-our-team-director-img"
               />
@@ -83,7 +90,7 @@ function Landing() {
             </div>
             <div className="meet-our-team-director d-flex flex-column align-items-center">
               <img
-                src={Directur}
+                src={ViceDirectur}
                 alt=""
                 className="meet-our-team-director-img"
               />
