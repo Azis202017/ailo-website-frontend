@@ -1,9 +1,20 @@
-import React from 'react'
+import React from 'react';
+import Lottie from 'lottie-react';
+import '../assets/css/error.css';
+import LoadingLottie from '../assets/json/loading.json';
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Error() {
   return (
-    <div>Error</div>
+    <div className='d-flex flex-column align-items-center justify-content-center vh-100 error-container' >
+      <Lottie animationData={LoadingLottie} loop={true} className='error-lottie' />
+      <h1 className='text-center'>Opsss sepertinya kamu tersesat...</h1>
+      <p className='text-center'>Klik tombol berikut ini untuk kembali ke beranda</p>
+
+      <Button as={Link} to={'/'}>Kembali ke beranda</Button>
+    </div>
   )
 }
 
-export default Error
+export default Error;
