@@ -9,6 +9,7 @@ import {
   NavbarApp,
   People,
 } from "./pages";
+import './assets/css/global.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
