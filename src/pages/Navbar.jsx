@@ -5,9 +5,12 @@ import Logo from "../assets/images/logo.png";
 import "../assets/css/navbar.css";
 import CopyRightFooter from "../components/footer/CopyRightFooter";
 import Footer from "../components/footer/Footer";
-
+import { useNavigation } from "react-router-dom";
+import Loading from "./Loading";
 function NavbarApp() {
   const location = useLocation();
+  const navigation = useNavigation();
+  const isLoading = navigation.state === "loading";
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -71,10 +74,10 @@ function NavbarApp() {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-      <Outlet />
-      <div className="footer">
+      {isLoading ? <Loading /> : <Outlet />}
 
-        <Footer/>
+      <div className="footer">
+        <Footer />
         <CopyRightFooter />
       </div>
     </>
