@@ -1,0 +1,277 @@
+.footer {
+  margin-top: 200px;
+}
+.row {
+  width: 100%;
+}
+/* Main Footer */
+.main-footer {
+  background-color: #3d2454;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 40px 16px 55px 16px;
+}
+.main-footer .logo {
+  width:300px;
+  margin-top: 45px;
+}
+/* End Main Footer */
+/* Second Footer */
+.second-footer {
+  background-color: #523070;
+  width: 100%;
+}
+.second-footer .second-footer-title {
+  color: white;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.get-in-touch .get-in-touch-title,
+.explore .explore-title {
+  margin-top: 20px;
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  color: white;
+}
+.footer-maps {
+  margin-top: 22px;
+}
+.get-in-touch .get-in-touch-icon {
+  width: 24px;
+  height: 24px;
+  margin-top: 8px;
+  margin-right: 8px;
+}
+.get-in-touch .get-in-touch-address {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+.footer-email {
+  margin-top: 12px;
+}
+.get-in-touch .get-in-touch-icon-email {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+.get-in-touch .get-in-touch-email {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+.footer-call {
+  margin-top: 12px;
+}
+.get-in-touch .get-in-touch-icon-call {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+.get-in-touch .get-in-touch-call {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+
+.get-in-touch-social-media .get-in-touch-title {
+  margin-top: 20px;
+  /* Desktop/Body/Bold/Body 1 Bold */
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: white;
+  line-height: 28px;
+}
+.footer-social-media {
+  margin-top: 22px;
+}
+.get-in-touch-social-media .get-in-touch-icon-instagram {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.get-in-touch-social-media .get-in-touch-instagram {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+}
+.get-in-touch-social-media .footer-email {
+  margin-top: 20px;
+}
+.get-in-touch-social-media .get-in-touch-icon-email {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.get-in-touch-social-media .get-in-touch-email {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+}
+
+.explore .explore-title {
+  margin-top: 20px;
+}
+.explore p a {
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+}
+
+/* End Second Footer */
+@media screen and (max-width: 480px) {
+  .second-footer .second-footer-title {
+    color: white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .get-in-touch .get-in-touch-title,
+  .explore .explore-title {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: white;
+  }
+  .footer-maps {
+    margin-top: 22px;
+  }
+  .get-in-touch .get-in-touch-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+  .get-in-touch .get-in-touch-address {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+  }
+  .footer-email {
+    margin-top: 12px;
+  }
+  .get-in-touch .get-in-touch-icon-email {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  .get-in-touch .get-in-touch-email {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+  }
+  .footer-call {
+    margin-top: 12px;
+  }
+  .get-in-touch .get-in-touch-icon-call {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  .get-in-touch .get-in-touch-call {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+  }
+
+  .get-in-touch-social-media .get-in-touch-title {
+    margin-top: 20px;
+    /* Desktop/Body/Bold/Body 1 Bold */
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    line-height: 28px;
+  }
+  .footer-social-media {
+    margin-top: 22px;
+  }
+  .get-in-touch-social-media .get-in-touch-icon-instagram {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .get-in-touch-social-media .get-in-touch-instagram {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+  }
+  .get-in-touch-social-media .footer-email {
+    margin-top: 20px;
+  }
+  .get-in-touch-social-media .get-in-touch-icon-email {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  .get-in-touch-social-media .get-in-touch-email {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+  }
+
+  .explore .explore-title {
+    margin-top: 20px;
+  }
+  .explore p a {
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+  }
+}
