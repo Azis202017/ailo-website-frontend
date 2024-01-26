@@ -1,5 +1,5 @@
 import React from 'react'
-import GedungD from '../../assets/images/gedung-d.jpg';
+import GedungD from '../../assets/images/gedung-d.webp';
 
 function GetInTouchContactUs() {
   return (
