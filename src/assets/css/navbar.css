@@ -16,7 +16,13 @@
   background-color: white !important; /* Change the background color as needed */
   transition: background-color 0.3s, box-shadow 0.3s;
 }
-/* .navbar-scrolled,
+.navbar-scrolled,
 .navbar-unscrolled {
-  padding: 16px 160px 16px 160px;
-} */
+  padding: 16px 40px 16px 40px;
+}
+@media screen and (max-width:990px) {
+  .navbar-scrolled,
+.navbar-unscrolled {
+  padding: 16px 8px 16px 20px;
+}
+}
