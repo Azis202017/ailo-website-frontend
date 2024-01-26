@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Maskot from '../assets/images/maskot.png';
-import Directur from '../assets/images/directur.png';
-import ViceDirectur from '../assets/images/vice.jpeg';
-import NLP from '../assets/images/nlp.png';
-import CV from '../assets/images/eye.png';
-import Siec from '../assets/images/diagram.png';
-import AI from '../assets/images/artificial-intelligence.png';
+import Maskot from '../assets/images/maskot.webp';
+import Directur from '../assets/images/directur.webp';
+import ViceDirectur from '../assets/images/vice.webp';
+import NLP from '../assets/images/nlp.webp';
+import CV from '../assets/images/eye.webp';
+import Siec from '../assets/images/diagram.webp';
+import AI from '../assets/images/artificial-intelligence.webp';
 
 
 
@@ -14,25 +14,25 @@ import AI from '../assets/images/artificial-intelligence.png';
 import "../assets/css/landing.css";
 function Landing() {
   return (
-    <>
+    <div className="landing">
       <section id="content">
         <section className="jumbotron">
           <div className="row flex-column-reverse flex-md-row">
-            <div className="col-lg-6 order-sm-2 order-lg-1">
+            <div className="col-lg-6 order-sm-2 order-md-2 order-lg-1">
               <h1>
                 <span>AI Center for Learning & Optimization</span> Telkom
                 University
               </h1>
-              <a href="#">Learn More</a>
+              <a href="/about-us">Learn More</a>
             </div>
-            <div className="col-lg-6 order-sm-1 order-lg-1">
+            <div className="col-lg-6 order-sm-1  order-md-1 order-lg-1">
               <img src={Maskot} alt="Maskot AI Center" />
             </div>
           </div>
         </section>
 
         <section id="research">
-          <div className="d-lg-flex">
+          <div className="d-lg-flex justify-content-between">
             <div className="nlp d-flex flex-column align-items-center">
               <img src={NLP} alt="" />
               <p>NLP</p>
@@ -78,32 +78,168 @@ function Landing() {
         </section>
         <section className="meet-our-team">
           <h1 className="meet-our-team-title">Meet our team</h1>
-          <div className="d-lg-flex justify-content-lg-center">
-            <div className="meet-our-team-director d-flex flex-column align-items-center">
-              <img
-                src={Directur}
-                alt=""
-                className="meet-our-team-director-img"
-              />
-              <h1>Prof. Dr. Suyanto, S.T., M.Sc</h1>
-              <p>Director of AI Center Telkom University</p>
+          <div className="d-lg-flex flex-lg-column">
+
+            <div className="d-lg-flex justify-content-lg-center">
+              <div className="meet-our-team-director d-flex flex-column align-items-center">
+                <img
+                  src={Directur}
+                  alt=""
+                  className="meet-our-team-director-img"
+                />
+                <h1>Prof. Dr. Suyanto, S.T., M.Sc</h1>
+                <p>Director of AI Center Telkom University</p>
+              </div>
+              <div className="meet-our-team-director vice-director d-flex flex-column align-items-center">
+                <img
+                  src={ViceDirectur}
+                  alt=""
+                  className="meet-our-team-director-img"
+                />
+                <h1>Suryo Adhi Wibowo, S.T., M.T., Ph.D</h1>
+                <p>Vice Director of AI Center Telkom University</p>
+              </div>
+
+
             </div>
-            <div className="meet-our-team-director d-flex flex-column align-items-center">
+
+          </div>
+          
+          
+          <div className="row">
+            <div className="col-lg-1">
               <img
                 src={ViceDirectur}
                 alt=""
-                className="meet-our-team-director-img"
+                className="meet-our-team-assistant-img"
               />
-              <h1>Suryo Adhi Wibowo, S.T., M.T., Ph.D</h1>
-              <p>Vice Director of AI Center Telkom University</p>
             </div>
-            <div className="d-flex justify-content-center">
+            <div className="col-lg-1">
               <img
                 src={ViceDirectur}
                 alt=""
-                className="meet-our-team-director-img"
+                className="meet-our-team-assistant-img"
               />
             </div>
+            <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div>
+            <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div> <div className="col-lg-1">
+              <img
+                src={ViceDirectur}
+                alt=""
+                className="meet-our-team-assistant-img"
+              />
+            </div>
+          </div>
+          <div className="d-flex justify-content-center">
+
           </div>
         </section>
 
@@ -114,11 +250,14 @@ function Landing() {
             <h1 className="faq-content-title">Get to Know Us Better</h1>
             <div className="faq-input">
               <div className="input-group">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Write a message"
-                />
+                <div className="input-text">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Write a message"
+                  />
+                </div>
+
                 <div className="input-group-append">
                   <button className="button button-faq" type="button">
                     Send
@@ -129,7 +268,7 @@ function Landing() {
           </div>
         </section>
       </section>
-    </>
+    </div>
   );
 }
 
