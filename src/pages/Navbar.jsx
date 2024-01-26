@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import { Navbar, Nav, Button, NavDropdown } from "react-bootstrap";
 import { Outlet, Link, useLocation } from "react-router-dom";
 import Logo from "../assets/images/logo.png";
 import "../assets/css/navbar.css";
@@ -7,6 +7,7 @@ import CopyRightFooter from "../components/footer/CopyRightFooter";
 import Footer from "../components/footer/Footer";
 import { useNavigation } from "react-router-dom";
 import Loading from "./Loading";
+
 function NavbarApp() {
   const location = useLocation();
   const navigation = useNavigation();
@@ -38,6 +39,7 @@ function NavbarApp() {
   const isActivePeople = location.pathname === people;
   const isActiveResearch = location.pathname === research;
   const isActiveEvents = location.pathname === events;
+
   return (
     <>
       <Navbar
@@ -50,7 +52,7 @@ function NavbarApp() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className=" ml-auto">
+          <Nav className="ml-auto">
             <Nav.Link as={Link} to={index} active={isActiveIndex}>
               Home
             </Nav.Link>
@@ -60,9 +62,20 @@ function NavbarApp() {
             <Nav.Link as={Link} to={people} active={isActivePeople}>
               People
             </Nav.Link>
-            <Nav.Link as={Link} to={research} active={isActiveResearch}>
-              Research
-            </Nav.Link>
+            <NavDropdown
+              title="Research and Publication"
+              id="basic-nav-dropdown"
+              active={isActiveResearch}
+              onSelect={() => setIsActiveResearch(!isActiveResearch)}
+            >
+              <NavDropdown.Item as={Link} to="/research-publication">
+                Research
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/research-publication/patent">
+                Patent
+              </NavDropdown.Item>
+              {/* Add more items as needed */}
+            </NavDropdown>
             <Nav.Link as={Link} to={events} active={isActiveEvents}>
               Events
             </Nav.Link>
