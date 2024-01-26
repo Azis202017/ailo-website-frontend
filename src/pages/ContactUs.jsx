@@ -2,16 +2,16 @@ import React from 'react'
 import '../assets/css/contact_us.css';
 import GetInTouchContactUs from '../components/contact_us/GetInTouchContactUs';
 import ContactCard from '../components/contact_us/ContactCard';
-import Instagram from '../assets/images/instagram.svg'
-import LinkedIn from '../assets/images/linkedin.svg'
-import Pesan from '../assets/images/pesan.svg'
-import Telepon from '../assets/images/telepon.svg'
+import Instagram from '../assets/images/instagram.webp'
+import LinkedIn from '../assets/images/linkedin.webp'
+import Pesan from '../assets/images/pesan.webp'
+import Telepon from '../assets/images/telepon.webp'
 import VisitUs from '../components/contact_us/VisitUs';
 import MapsContact from '../components/contact_us/MapsContact';
 
 function ContactUs() {
   return (
-    <>
+    <div className='contact-us'>
       <GetInTouchContactUs />
       <section id="contact-us-card">
         <div className="row">
@@ -37,7 +37,7 @@ function ContactUs() {
 
 
 
-    </>
+    </div>
   );
 }
 
