@@ -2,6 +2,8 @@
 
 body {
   background: #fbf5fb !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .btn-primary {
   background-color: #663c8c !important;
