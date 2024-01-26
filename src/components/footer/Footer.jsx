@@ -1,8 +1,8 @@
 import React from "react";
-import Location from "../../assets/images/location.png";
-import Email from "../../assets/images/message.png";
-import Instagram from "../../assets/images/instagram.png";
-import Logo from "../../assets/images/logo.png";
+import Location from "../../assets/images/location.webp";
+import Email from "../../assets/images/message.webp";
+import Instagram from "../../assets/images/instagram.webp";
+import Logo from "../../assets/images/logo.webp";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
