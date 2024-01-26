@@ -4,13 +4,221 @@ html {
 body {
   background: #fbf5fb !important;
 }
-#content {
-  /* display: none; */
-}
+
 .jumbotron {
   background: #dbd0e5 !important;
+  margin-top: 105px;
+  border-radius: 20px;
+
   padding: 52px 16px 52px 16px !important;
 }
+.jumbotron img {
+  width: 100%;
+  height: 450px;
+}
+.jumbotron h1 {
+  margin-top: 20px;
+  margin-top: 150px;
+  color: #27303e;
+
+  font-family: Poppins;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+.jumbotron span {
+  color: #663c8c;
+}
+.jumbotron a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: white;
+  background-color: #3244cc;
+  padding: 12px 28px 12px 28px;
+  border-radius: 8px;
+}
+#research {
+  margin-top: -60px;
+  border-radius: 20px;
+  margin-bottom: 120px;
+  width: 100%;
+  padding: 36px 32px 36px 32px;
+  background-color: white;
+}
+#research .nlp img {
+  width: 150px;
+  height: 150px;
+}
+#research .nlp p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about-us .about-us-subtitle {
+  color: var(--Purple-5, #663C8C);
+  border-left: 4px hsl(272, 40%, 39%) solid ;
+  padding-left:16px;
+/* Desktop/Headline/Regular/H3 */
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px; /* 112.5% */
+}
+
+.about-us .about-us-title {
+  color: var(--blue-95, #050A11);
+/* Desktop/Headline/Bold/H2 */
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 52px; /
+}
+.about-us .about-us-description{
+  color: var(--blue-85, #101D33);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; 
+}
+.meet-our-team-title {
+  text-align: center;
+  color: #663c8c;
+  margin-bottom: 20px;
+}
+.meet-our-team-director-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 220px;
+}
+.vice-director {
+  margin-left: 20px;
+}
+.meet-our-team-director h1,
+.meet-our-team-director p {
+  color: var(--Purple-5, #663c8c);
+  font-family: Poppins;
+}
+.meet-our-team-director h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+.meet-our-team-director p {
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}
+.meet-our-team-assistant-img {
+  width: 100px;
+  height:100px;
+  margin-top: 20px;
+  border-radius: 100px;
+}
+.faq {
+  width: 100%;
+}
+.faq img {
+  width: 400px;
+  height:282px;
+  z-index: -12px;
+  margin-left: 20px;
+}
+
+.faq .faq-content {
+  padding: 56px 0px 56px 0px;
+  background-color: #3d2454;
+  border-radius: 40px;
+  margin-top: -70px;
+  color: white;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 150px;
+  width: 100%;
+}
+
+.faq-content-subtitle {
+  color: var(--Grayscale-White, #f5f5fa);
+  /* Desktop/Headline/Bold/Headline 3 Bold */
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+
+/* Style for the separator line */
+.faq-content-subtitle::before,
+.faq-content-subtitle::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px; /* Adjust the width as needed */
+  border-bottom: 2px solid var(--Grayscale-White, #f5f5fa);
+  margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+.faq .faq-content-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  color: #d6dfee;
+  text-align: center;
+  margin-top: 0;
+}
+
+.faq-input {
+  background: white;
+  padding: 8px;
+  height:100px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 20px;
+  background: white;
+}
+
+.form-control {
+  margin-top: 25px;
+  border: none !important;
+}
+.form-control:focus {
+
+  border: none !important;
+}
+.input-text {
+  width:85%;
+
+}
+.button {
+  display: block;
+  border-radius: 8px !important;
+  background: #3460aa !important;
+  border: none;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: white;
+  width:150px !important;
+}
+
+
 @media screen and (max-width: 480px) {
   .jumbotron img {
     width: 100%;
@@ -70,10 +278,10 @@ body {
     height: 220px;
     border-radius: 220px;
   }
-  .meet-our-team-director h1, .meet-our-team-director p {
+  .meet-our-team-director h1,
+  .meet-our-team-director p {
     color: var(--Purple-5, #663c8c);
     font-family: Poppins;
-    
   }
   .meet-our-team-director h1 {
     font-size: 24px;
@@ -147,12 +355,8 @@ body {
     border-radius: 20px;
     background: white;
   }
-  .form-control {
-    border: none !important;
-  }
-  .form-control:focus {
-    border: none !important;
-  }
+
+
   .button {
     border-radius: 8px !important;
     width: 120px;
@@ -164,5 +368,11 @@ body {
     font-weight: 700;
     line-height: 28px;
     color: white;
+  }
+}
+@media screen and (min-width: 1067px) {
+  .landing {
+    margin-left: 40px !important;
+    margin-right: 40px !important;
   }
 }
