@@ -9,6 +9,7 @@ import {
   NavbarApp,
   People,
   ContactUs,
+  Patent
 } from "./pages";
 import './assets/css/global.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -34,6 +35,18 @@ const router = createBrowserRouter([
       {
         path: "/research-publication",
         element: <Research />,
+        children: [
+          {
+            index:true,
+            element: <Research />,
+          },
+          {
+            path: "patent",
+            element: <Patent />,
+          },
+        
+
+        ]
       },
       {
         path: "/events",
@@ -43,6 +56,7 @@ const router = createBrowserRouter([
         path: "/contact-us",
         element: <ContactUs />,
       },
+
     ],
   },
 ]);
