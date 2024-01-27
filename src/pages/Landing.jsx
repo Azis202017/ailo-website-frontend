@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 import { Link } from "react-router-dom";
 import Maskot from '../assets/images/maskot.webp';
 import Directur from '../assets/images/directur.webp';
 import ViceDirectur from '../assets/images/vice.webp';
 import NLP from '../assets/images/nlp.webp';
 import CV from '../assets/images/eye.webp';
+import PO from '../assets/images/bpm.webp';
+
 import Siec from '../assets/images/diagram.webp';
 import AI from '../assets/images/artificial-intelligence.webp';
 
@@ -13,6 +19,18 @@ import AI from '../assets/images/artificial-intelligence.webp';
 
 import "../assets/css/landing.css";
 function Landing() {
+  const redirectToWhatsApp = () => {
+
+    const message = document.querySelector('.message-textarea').value;
+    const whatsappMessage = `Halo admin, Aku ingin mendiskusikan mengenai ${message}`;
+
+    const whatsappLink = `https://wa.me/6282116984458?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.location.href = whatsappLink;
+  };
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <div className="landing">
       <section id="content">
@@ -34,23 +52,39 @@ function Landing() {
         <section id="research">
           <div className="d-lg-flex justify-content-between">
             <div className="nlp d-flex flex-column align-items-center">
-              <img src={NLP} alt="" />
+              <a href="">
+
+                <img src={NLP} alt="" />
+              </a>
               <p>NLP</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src={CV} alt="" />
+              <a href="">
+
+                <img src={CV} alt="" />
+              </a>
               <p>Computer Vision</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src={CV} alt="" />
+              <a href="">
+
+                <img src={PO} alt="" />
+              </a>
               <p>P&O</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src={Siec} alt="" />
+              <a href="">
+
+                <img src={Siec} alt="" />
+              </a>
+
               <p>SIEC</p>
             </div>
             <div className="nlp d-flex flex-column align-items-center">
-              <img src={AI} alt="" />
+              <a href="">
+
+                <img src={AI} alt="" />
+              </a>
               <p>4G AI</p>
             </div>
           </div>
@@ -104,140 +138,8 @@ function Landing() {
             </div>
 
           </div>
-          
-          
-          <div className="row">
-            <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div>
-            <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div>
-            <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div>
-            <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div> <div className="col-lg-1">
-              <img
-                src={ViceDirectur}
-                alt=""
-                className="meet-our-team-assistant-img"
-              />
-            </div>
-          </div>
+
+
           <div className="d-flex justify-content-center">
 
           </div>
@@ -253,13 +155,13 @@ function Landing() {
                 <div className="input-text">
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control message-textarea"
                     placeholder="Write a message"
                   />
                 </div>
 
                 <div className="input-group-append">
-                  <button className="button button-faq" type="button">
+                  <button className="button button-faq" onClick={redirectToWhatsApp} type="button">
                     Send
                   </button>
                 </div>
