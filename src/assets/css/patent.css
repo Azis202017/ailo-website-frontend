@@ -1,0 +1,60 @@
+.patents {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 159px;
+}
+.patents h1 {
+  color: var(--Purple-5, #663c8c);
+  /* Desktop/Headline/Bold/H2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+.patents p {
+  color: var(--Blue-7, #1f3a66);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.patent-image {
+  width: 100%;
+}
+#patent-list {
+  background-color: #663c8c;
+  border-radius: 40px;
+  padding-top: 116px;
+  padding-bottom: 116px;
+  margin-top: 174px;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: white;
+}
+#patent-list h1 {
+  color: #fff;
+
+  text-align: center;
+  /* Desktop/Headline/Bold/H2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+}
+#patent-list ol {
+  margin-top: 20px;
+}
+#patent-list ol li {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 8px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 116.667% */
+}
