@@ -1,0 +1,24 @@
+.banner-headline {
+  background: url("../images/background-headline.webp");
+  width: 98% !important;
+  height: 450px;
+  background-size: cover;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 40px;
+  margin-top: 121px;
+}
+.banner-headline h1 {
+  color: #fbf5fb;
+
+  text-align: center;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+}
+.banner-headline img {
+  width: 240px;
+  height: 287px;
+}
