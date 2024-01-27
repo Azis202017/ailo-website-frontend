@@ -1,0 +1,47 @@
+.research-publication-area {
+  margin: 191px 40px 0 40px; /* Margin shorthand */
+}
+
+.research-publication-area h1 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  color: var(--Purple-5, #663c8c);
+}
+
+.research-publication-area p {
+  color: var(--Blue-7, #1f3a66);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.newest-research-title {
+  color: #27303e;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 138px;
+  line-height: 36px; /* 150% */
+  text-transform: capitalize;
+  position: relative;
+  text-align: center;
+}
+
+/* Style for the separator line */
+.newest-research-title::before,
+.newest-research-title::after {
+  content: "";
+  display: inline-block;  
+  vertical-align: middle;
+  width: 33.50%; /* Set width to 100% */
+  border-bottom: 2px solid var(--Grayscale-White, black);
+  margin: 0 10px; /* Adjust the spacing as needed */
+}
