@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Banner from '../components/about_us/Banner'
 function Events() {
   return (
-    <div>Events</div>
+    <div>
+           <Banner title="Events" />
+
+    </div>
   )
 }
 
