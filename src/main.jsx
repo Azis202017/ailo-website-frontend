@@ -15,8 +15,10 @@ import './assets/css/global.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
+
   {
     path: "/",
+
     errorElement: <Error />,
     element: <NavbarApp />,
     children: [
@@ -31,20 +33,22 @@ const router = createBrowserRouter([
       {
         path: "/people",
         element: <People />,
+
       },
       {
         path: "/research-publication",
-        element: <Research />,
         children: [
           {
-            index:true,
+            index: true,
             element: <Research />,
           },
           {
             path: "patent",
             element: <Patent />,
+            
+
           },
-        
+
 
         ]
       },
