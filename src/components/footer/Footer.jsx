@@ -14,6 +14,8 @@ function Footer() {
         <div className="col-lg-3 get-in-touch">
           <h1 className="get-in-touch-title">Get In Touch</h1>
           <div className="footer-maps">
+            <a href="https://www.google.com/maps?ll=-6.972953,107.628754&z=16&t=m&hl=en&gl=ID&mapclient=embed&cid=1075699038868757555">
+
             <div className="d-flex">
               <img src={Location} className="get-in-touch-icon" alt="" />
               <div className="get-in-touch-address">
@@ -21,21 +23,29 @@ function Footer() {
                 Batu,Bandung, Indonesia 40257
               </div>
             </div>
+            </a>
           </div>
 
           <div className="footer-email">
+            <a href="mailto:ailo@telkomuniversity.ac.id">
+
             <div className="d-flex">
               <img src={Email} className="get-in-touch-icon-email" alt="" />
               <div className="get-in-touch-email">
                 ailo@telkomuniversity.ac.id
               </div>
             </div>
+            </a>
           </div>
+
           <div className="footer-call">
+            <a href="https://wa.me/6282116984458">
+
             <div className="d-flex">
               <img src={Email} className="get-in-touch-icon-call" alt="" />
-              <div className="get-in-touch-call">+62 821-4514-3639</div>
+              <div className="get-in-touch-call">+62 821-1698-4458</div>
             </div>
+            </a>
           </div>
         </div>
         <div className="col-lg-3 get-in-touch-social-media">
