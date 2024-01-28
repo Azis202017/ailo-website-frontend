@@ -12,6 +12,8 @@
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
+  margin-left: 40px;
+  margin-top: 105px;
 }
 .about-independent-us-subtitle {
   color: var(--Blue-7, #1f3a66);
@@ -20,6 +22,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  margin-left: 40px;
+
 }
 .foto {
   position: relative;
@@ -50,6 +54,7 @@
   padding: 4px;
   transition: 1s;
 }
+
 
 @media screen and (min-width: 482px) {
   .about-us-heading {
