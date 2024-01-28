@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react'
+
 
 function MapsContact() {
-  useEffect(() => {
-    AOS.init();
-  }, [])
+
   const redirectToWhatsApp = () => {
     const name = document.querySelector('.name-input').value;
     const email = document.querySelector('.email-input').value;
