@@ -7,6 +7,8 @@ import CopyRightFooter from "../components/footer/CopyRightFooter";
 import Footer from "../components/footer/Footer";
 import { useNavigation } from "react-router-dom";
 import Loading from "./Loading";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function NavbarApp() {
   const location = useLocation();
@@ -27,7 +29,9 @@ function NavbarApp() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  useEffect(() => {
+    AOS.init();
+  }, [])
   const aboutUs = "/about-us";
   const index = "/";
   const people = "/people";
