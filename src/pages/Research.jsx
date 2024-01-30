@@ -20,7 +20,7 @@ function Research() {
         <h1 className='newest-research-title full-width'>Newest Research and publication</h1>
       </section>
       <BannerHeadlineSecond title="AI Center for Learning & Optimization Telkom University" />
-
+        
     </div>
   )
 }
