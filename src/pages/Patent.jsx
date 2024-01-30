@@ -18,11 +18,10 @@ const Patent = () => {
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
-          "ngrok-skip-browser-warning": true,
-        }
+          }
       };
 
-      const response = await axios.get('https://notable-moth-accurately.ngrok-free.app/patents', config);
+      const response = await axios.get('api/patents', config);
 
       setPatents(response.data.response);
       setLoading(false); // Set loading to false after data is fetched
