@@ -7,6 +7,6 @@ export {default as Research } from './Research';
 export {default as NavbarApp } from './Navbar';
 export {default as ContactUs } from './ContactUs';
 export {default as Patent } from './Patent';
-
+export {default as DetailPeople} from './DetailPeople';
 
 
