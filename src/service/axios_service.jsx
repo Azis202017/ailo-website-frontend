@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = axios.create({
-  baseURL : 'https://notable-moth-accurately.ngrok-free.app'
+const customAxios = axios.create({
+  baseURL : 'http://127.0.0.1:8000'
 });
-export default baseUrl;
+export default customAxios;
