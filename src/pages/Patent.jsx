@@ -4,6 +4,7 @@ import Loading from './Loading';
 import Banner from '../components/about_us/Banner';
 import PatentImage from '../assets/images/patent.webp'
 import '../assets/css/patent.css';
+import customAxios from '../service/axios_service';
 const Patent = () => {
   const [patents, setPatents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -21,11 +22,10 @@ const Patent = () => {
           }
       };
 
-      const response = await axios.get('api/patents', config);
+      const response = await customAxios.get('api/patents', config);
 
-      setPatents(response.data.response);
+      setPatents(response.data.data);
       setLoading(false); // Set loading to false after data is fetched
-      console.log('Fetched Data:', response.data);
     } catch (error) {
       console.error('Error fetching data:', error);
       setLoading(false); // Set loading to false in case of an error
@@ -56,7 +56,7 @@ const Patent = () => {
         ) : (
           <ol>
             {patents.map(patent => (
-              <li key={patent.patent_id}>{patent.patent_title}</li>
+              <li key={patent.id}>{patent.patent}</li>
             ))}
           </ol>
         )}
