@@ -14,7 +14,6 @@ function NavbarApp() {
   const location = useLocation();
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
-  console.log(isLoading);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
