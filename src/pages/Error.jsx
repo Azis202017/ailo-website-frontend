@@ -9,7 +9,7 @@ function Error() {
   return (
     <div className='d-flex flex-column align-items-center justify-content-center vh-100 error-container' >
       <Lottie animationData={LoadingLottie} loop={true} className='error-lottie' />
-      <h1 className='text-center'>Opsss sepertinya kamu tersesat...</h1>
+      <h1 className='text-center'>Page Not Found</h1>
       <p className='text-center'>Klik tombol berikut ini untuk kembali ke beranda</p>
 
       <Button as={Link} to={'/'}>Kembali ke beranda</Button>
