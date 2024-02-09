@@ -9,7 +9,7 @@ function MapsContact() {
     const phone = document.querySelector('.phone-input').value;
     const message = document.querySelector('.message-textarea').value;
     console.log(name);
-    const whatsappMessage = `Halo admin, nama ku ${name} dan email ku adalah ${email} dan nomor handphone ku ${phone}. Aku ingin mendiskusikan mengenai ${message}`;
+    const whatsappMessage = `Halo admin, nama saya ${name} dan email saya adalah ${email} dan nomor handphone saya ${phone}. Saya ingin mendiskusikan mengenai ${message}`;
 
     const whatsappLink = `https://wa.me/6282116984458?text=${encodeURIComponent(whatsappMessage)}`;
 
