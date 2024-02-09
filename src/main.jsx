@@ -10,7 +10,8 @@ import {
   People,
   ContactUs,
   Patent,
-  DetailPeople
+  DetailPeople,
+  DetailResearch
 } from "./pages";
 import './assets/css/global.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -33,17 +34,22 @@ const router = createBrowserRouter([
       },
       {
         path: "/people",
-        children : [
+        children: [
           {
             index: true,
             element: <People />
-          }, 
+          },
           {
             path: ":id",
             element: <DetailPeople />
           }
-          
+
         ]
+
+      },
+      {
+        path: '/research-area/:id',
+        element: <DetailResearch />
 
       },
       {
@@ -56,7 +62,7 @@ const router = createBrowserRouter([
           {
             path: "patent",
             element: <Patent />,
-            
+
 
           },
 
@@ -65,7 +71,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/events",
-        element: <Events />,
+        children: [
+          {
+            index: true,
+            element: <Events />,
+
+
+          },
+          {
+            path: ':id',
+            element: <EventArea />
+
+          },
+        ]
       },
       {
         path: "/contact-us",
