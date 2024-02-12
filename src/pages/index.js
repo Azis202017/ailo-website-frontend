@@ -9,6 +9,6 @@ export {default as ContactUs } from './ContactUs';
 export {default as Patent } from './Patent';
 export {default as DetailPeople} from './DetailPeople';
 export {default as DetailResearch} from './DetailResearch';
-
+export {default as EventArea} from './EventArea';
 
 
