@@ -40,10 +40,10 @@ function Events() {
 
               <div key={category.id} className="col-lg-6">
                 <a href={`/events/${category.id}`}>
-                  <div className="d-flex">
+                  <div className="d-flex mt-5">
                     <img
                       src={category.foto_url}
-                      className="img-fluid"
+                      className=" event-image"
                       alt=""
                     />
                     <p className='events-card-title'>{category.title}</p>
