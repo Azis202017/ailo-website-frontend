@@ -1,0 +1,20 @@
+#events-card {
+  margin-top: 72px;
+}
+.event-image {
+  border-radius: 32px;
+  height: 200px;
+  margin-left: 40px;
+}
+.events-card-title {
+  color: var(--Violet-5, #8e3a8c);
+  text-align: center;
+  /* Desktop/Headline/Bold/H2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
