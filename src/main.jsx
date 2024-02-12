@@ -11,7 +11,8 @@ import {
   ContactUs,
   Patent,
   DetailPeople,
-  DetailResearch
+  DetailResearch,
+  EventArea
 } from "./pages";
 import './assets/css/global.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
