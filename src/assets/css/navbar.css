@@ -3,8 +3,8 @@
   height: 48px;
 }
 .active {
-  color: #663C8C !important;
-  border-bottom: 4px solid hsl(272, 40%, 39%);
+  color: #3460AA !important;
+  border-bottom: 4px solid #3460AA;
 }
 
 .navbar-scrolled {
