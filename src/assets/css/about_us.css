@@ -23,7 +23,6 @@
   font-weight: 400;
   line-height: 28px;
   margin-left: 40px;
-
 }
 .foto {
   position: relative;
@@ -54,13 +53,157 @@
   padding: 4px;
   transition: 1s;
 }
+.research-area-about-us h1 {
+  margin-top: 195px;
+  text-align: center;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 96px;
+}
+.research-area-about-us h1 span {
+  color: var(--Purple-5, #663c8c);
+}
+.research-area-about-content {
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
+.research-area-about-content-card {
+  border-radius: 30px;
+  width: 250px;
+  height: 100%;
+  background: #3d2454;
+  text-align: center;
+  padding: 20px;
+  color: white;
+  margin-right: 20px;
+}
+.research-area-about-content-card p {
+  color: var(--Violet-0, #fbf5fb);
+  text-align: center;
+  margin-top: 20px;
+  /* Desktop/Body/Regular/Body 1 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+#research-img {
+  width: 150px !important;
+  height: 150px !important;
+}
+#vission {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 120px;
+}
+.vision-directur {
+  margin-left: 20px;
+}
+.vision-directur img,
+.vision-vice-directur img {
+  width: 100%;
+  height: 450px;
+  border-radius: 30px;
+}
+.vision-directur h1,
+.vision-vice-directur h1 {
+  margin-top: 50px;
+  color: var(--Purple-5, #663c8c);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  border-bottom: 3px solid #663c8c;
+  padding-bottom: 8px;
+}
+.vision-directur p,
+.vision-vice-directur p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.our-vission-title {
+  margin-top: 250px;
+  color: var(--Purple-5, #663c8c);
+
+  /* Desktop/Headline/Bold/H2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px; /* 108.333% */
+}
+.our-vission-subtitle {
+  color: var(--Blue-7, #1f3a66);
+
+  /* Desktop/Body/Regular/Body 1 */
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+#mission {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 96px;
+}
+.mission-title {
+  color: var(--Purple-5, #663c8c);
+  /* Desktop/Headline/Bold/H2 */
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  margin-top: 120px;
+}
+.mission-subtitle {
+  color: var(--Blue-7, #1f3a66);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.mission-card {
+  height: 279px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #663c8c;
+  margin-top: 20px;
+}
+.mission-card.mission-card-active {
+  background: #663c8c ;
+  color: white ;
+}
+.mission-card-title {
+  text-align: center;
+  /* Desktop/Body/Regular/Body 2 */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
 
 @media screen and (min-width: 482px) {
   .about-us-heading {
     margin-top: 105px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .about-us-heading {
     margin-top: -350px;
