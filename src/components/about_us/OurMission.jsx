@@ -2,32 +2,7 @@ import React, { useEffect, useState } from 'react'
 import customAxios from '../../service/axios_service';
 import Loading from '../../pages/Loading';
 function OurMission() {
-  const [people, setPeople] = useState({});
-
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try {
-      let config = {
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        }
-      };
-
-      const response = await customAxios.get('api/user', config);
-
-      setPeople(response.data);
-      setLoading(false);
-      console.log(response.data); // Set loading to false after data is fetched
-    } catch (error) {
-      console.error('Error fetching data:', error);
-      setLoading(false); // Set loading to false in case of an error
-    }
-  };
+  
   return (
     <>
       {loading ? <Loading /> :
