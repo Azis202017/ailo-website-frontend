@@ -12,7 +12,8 @@ import {
   Patent,
   DetailPeople,
   DetailResearch,
-  EventArea
+  EventArea,
+  DetailEvent
 } from "./pages";
 import './assets/css/global.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -80,10 +81,21 @@ const router = createBrowserRouter([
 
           },
           {
-            path: ':id',
-            element: <EventArea />
+            path: 'events-area',
 
+            children: [
+              {
+                index: true,
+                element: <EventArea />,
+              },
+              {
+
+                path: ':id',
+                element: <DetailEvent />
+              }
+            ]
           },
+
         ]
       },
       {
