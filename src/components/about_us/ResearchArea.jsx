@@ -4,10 +4,7 @@ import customAxios from '../../service/axios_service';
 import Loading from '../../pages/Loading';
 import { Link } from 'react-router-dom';
 function ResearchArea() {
-  const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
   const [researchArea, setResearchArea] = useState([]);
   const [loading, setLoading] = useState(true);
 
