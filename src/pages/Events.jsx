@@ -3,12 +3,20 @@ import Banner from '../components/about_us/Banner'
 import Loading from './Loading';
 import customAxios from '../service/axios_service';
 import '../assets/css/events.css'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 function Events() {
   const [loading, setLoading] = useState(true);
   const [categoryEvent, setCategoryEvent] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+
   useEffect(() => {
     fetchData();
   }, []);
+  const handleSubmit = (id) => {
+    
+    navigate(`/events?q=${encodeURIComponent(id)}`);
+  };
 
   const fetchData = async () => {
     try {
@@ -25,7 +33,7 @@ function Events() {
       setLoading(false);
     } catch (error) {
       console.error('Error fetching data:', error);
-      setLoading(false); // Set loading to false in case of an error
+      setLoading(false);
     }
   };
   return (
@@ -39,7 +47,7 @@ function Events() {
             {categoryEvent.map(category => (
 
               <div key={category.id} className="col-lg-6">
-                <a href={`/events/${category.id}`}>
+                <Link to={`events-area/?category=${category.title}`}>
                   <div className="d-flex mt-5">
                     <img
                       src={category.foto_url}
@@ -49,7 +57,8 @@ function Events() {
                     <p className='events-card-title'>{category.title}</p>
 
                   </div>
-                </a>
+                </Link>
+              
 
 
               </div>
