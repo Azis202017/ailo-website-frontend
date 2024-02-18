@@ -1,0 +1,10 @@
+.card-events {
+  margin-top: 100px;
+  width:1056px;
+  border-radius: 64px;
+  padding: 18px 64px 18px 64px;
+  background-color:#E9E2F0;
+}
+.card-events h1 {
+  margin-top: 100px;
+}
