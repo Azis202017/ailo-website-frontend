@@ -39,27 +39,27 @@ function People() {
           <h1 className='directur-title'>Director of AI Center Telkom University</h1>
           <a href={`/people/${people.directur.id}`}>
 
-          <div className="d-flex ">
-            <img src={people.directur.foto_url} className='img-fluid directur-image' alt="Directur of AI Center Telkom University" />
-            <p className='directur-name'>{people.directur.name}</p>
+            <div className="d-flex ">
+              <img src={people.directur.foto_url} className='img-fluid directur-image' alt="Directur of AI Center Telkom University" />
+              <p className='directur-name'>{people.directur.name}</p>
 
-          </div>
+            </div>
           </a>
         </div>
         <div className="vice-directur">
           <h1 className='vice-directur-title'>Vice Director of AI Center Telkom University</h1>
           <a href={`/people/${people.vice_directur.id}`}>
 
-          <div className="d-flex justify-content-end">
-            <p className='vice-directur-name'>{people.vice_directur.name}</p>
-            <img src={people.vice_directur.foto_url} className='img-fluid vice-directur-image' alt="Directur of AI Center Telkom University" />
+            <div className="d-flex justify-content-end">
+              <p className='vice-directur-name'>{people.vice_directur.name}</p>
+              <img src={people.vice_directur.foto_url} className='img-fluid vice-directur-image' alt="Directur of AI Center Telkom University" />
 
-          </div>
+            </div>
           </a>
         </div>
         <div className="member">
           <h1 className='vice-directur-title'>Members of AI Center</h1>
-          
+
           <div className="row">
             {people.members.map(member => (
 
@@ -107,8 +107,8 @@ function People() {
                     </div>
                     <div className="col-lg-6">
                       <h1 className='member-name'> {member.name}</h1>
-                      <h1  className='member-biography'> {member.jabatan}</h1>
-              
+                      <h1 className='member-biography'> {member.jabatan}</h1>
+
                     </div>
                   </div>
                 </a>
@@ -137,15 +137,15 @@ function People() {
                     </div>
                     <div className="col-lg-6">
                       <h1 className='member-name'> {member.name}</h1>
-                      <h1  className='member-biography'> {member.jabatan}</h1>
-                     
+                      <h1 className='member-biography'> {member.jabatan}</h1>
+
 
                     </div>
                   </div>
                 </a>
               </div>
             ))}
-            
+
 
           </div>
 
