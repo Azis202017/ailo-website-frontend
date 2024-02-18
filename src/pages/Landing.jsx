@@ -82,7 +82,7 @@ function Landing() {
             </div>
           </section>
           <div className="d-flex justify-content-center">
-
+            
             <section id="research" data-aos="zoom-in-right">
               <div className="d-lg-flex justify-content-between">
                 {researchArea.map(research => (
