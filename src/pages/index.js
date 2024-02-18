@@ -10,5 +10,6 @@ export {default as Patent } from './Patent';
 export {default as DetailPeople} from './DetailPeople';
 export {default as DetailResearch} from './DetailResearch';
 export {default as EventArea} from './EventArea';
+export {default as DetailEvent} from './DetailEvent';
 
 
