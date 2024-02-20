@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from '../components/about_us/Banner'
 import BannerHeadlineSecond from '../components/about_us/BannerHeadlineSecond';
 import '../assets/css/research.css'
+import ResearchArea from '../components/about_us/ResearchArea';
 
 function Research() {
   return (
@@ -16,11 +17,15 @@ function Research() {
         </div>
 
       </section>
-      <section className="newest-research">
+      {/* <section className="newest-research">
         <h1 className='newest-research-title full-width'>Newest Research and publication</h1>
+      </section> */}
+      <section id="research-area-card-group">
+
+        <ResearchArea />
       </section>
       <BannerHeadlineSecond title="AI Center for Learning & Optimization Telkom University" />
-        
+
     </div>
   )
 }
