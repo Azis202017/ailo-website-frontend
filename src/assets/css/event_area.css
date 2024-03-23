@@ -1,10 +1,42 @@
 .card-events {
   margin-top: 100px;
-  width:1056px;
+  width: 1056px;
   border-radius: 64px;
   padding: 18px 64px 18px 64px;
-  background-color:#E9E2F0;
+  background-color: #e9e2f0;
 }
 .card-events h1 {
-  margin-top: 100px;
+  margin-top: 50px;
+  color: var(--Violet-5, #8e3a8c);
+  /* Desktop/Headline/Bold/H3 */
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+.card-events .card-event-description {
+  color: var(--Violet-5, #8e3a8c);
+  /* Desktop/Headline/Regular/H4 */
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+.link-see {
+  padding: 20px;
+
+  display: inline-block;
+  border-radius: 8px;
+  background: var(--Violet-5, #8e3a8c);
+  color: white;
+}
+.link-see:hover {
+  color: #e9e2f0;
+  text-decoration: underline;
+}
+.card-event-img {
+  width: 227.219px;
+  margin-right: 20px;
 }

@@ -5,6 +5,8 @@ import '../assets/css/event_area.css'
 import Loading from './Loading';
 import EmptyState from '../components/empty_state/empty_state'
 import customAxios from '../service/axios_service';
+import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 function EventArea() {
   const [searchParams, setSearchParams] = useSearchParams();
   const eventCategory = searchParams.get('category');
@@ -39,7 +41,7 @@ function EventArea() {
   return (
 
     <div >
-      {loading ? <Loading /> : eventDetail.isEmpty ? <EmptyState title="Data Tidak ditemukan" message="Silahkan kembali ke halaman beranda melalui link berikut ini" link="/events" halamanText="Events" /> :
+      {loading ? <Loading /> : eventDetail.length === 0 ? <EmptyState title="Sedang tidak ada events" message="Silahkan kembali ke halaman beranda melalui link berikut ini" link="/events" halamanText="Events" /> :
         <>
           {eventDetail.map(event => (
 
@@ -47,14 +49,16 @@ function EventArea() {
               <div className="card-events">
                 <div className="d-flex">
                   <div className="left-card">
-                    <img src={event.foto_url} alt="" />
+                    <img className='card-event-img' src={event.foto_url} alt="" />
                   </div>
                   <div className="right-card">
 
 
                     <h1>{event.title}</h1>
-                    <p>{event.description}</p>
-                    <a href={`/events/events-area/${event.id}`}>See more</a>
+                    <Markdown remarkPlugins={[remarkGfm]} className='card-event-description'  >
+                      {event.description}
+                    </Markdown>
+                    <a href={`/events/events-area/${event.id}`} className='link-see'>See more</a>
 
 
                   </div>

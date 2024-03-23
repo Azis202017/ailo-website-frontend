@@ -45,3 +45,6 @@
   border-bottom: 2px solid var(--Grayscale-White, black);
   margin: 0 10px; /* Adjust the spacing as needed */
 }
+#research-area-card-group {
+  margin-top: 90px;
+}
